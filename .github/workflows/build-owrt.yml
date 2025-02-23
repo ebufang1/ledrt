@@ -3,7 +3,7 @@ name: tewrt
 
 on:
   schedule:
-    - cron: "0 22 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       ssh:
