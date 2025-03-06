@@ -34,7 +34,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang -b 1.23 feeds/packages/lang/golang
 git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 sed -i 's|^KERNEL_PATCHVER:=6.6|KERNEL_PATCHVER:=6.1|' target/linux/x86/Makefile
 
