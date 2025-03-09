@@ -1,0 +1,25 @@
+# 开发工具包
+build-essential          # 基本的编译工具（gcc、g++、make 等）
+curl                     # 用于获取网络资源的命令行工具
+git                      # Git 版本控制工具
+vim                      # 编辑器
+wget                     # 网络下载工具
+unzip                    # 解压工具
+net-tools                # 网络工具（如 ifconfig 等）
+cmake                    # 编译工具
+python3                  # Python3 解释器
+python3-pip              # Python3 包管理器
+docker.io                # Docker 容器引擎
+nodejs                   # Node.js 运行环境
+npm                      # Node.js 包管理器
+docker-compose           # Docker Compose 工具
+zlib1g-dev               # 用于编译支持 zlib 的工具
+libssl-dev               # 安装 OpenSSL 开发库
+libcurl4-openssl-dev     # 安装 curl 的开发库
+libjpeg-dev              # JPEG 图像处理库
+libpng-dev               # PNG 图像处理库
+libxml2-dev              # XML 开发库
+libsqlite3-dev           # SQLite3 开发库
+libmysqlclient-dev       # MySQL 客户端开发库
+libssl-dev               # SSL 库开发包
+libffi-dev               # FFI（Foreign Function Interface）库
