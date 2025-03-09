@@ -52,7 +52,8 @@ jobs:
         sudo -E apt update
         sudo -E apt -y purge docker* ghc* zulu* dotnet* openjdk* mysql* php* dotnet* snap*
         sudo -E apt -y full-upgrade
-        sudo -E apt -y install $(curl -fsSL https://is.gd/depends_ubuntu_2204)
+#        sudo -E apt -y install $(curl -fsSL https://is.gd/depends_ubuntu_2204)
+        sudo apt -y install $(cat ./depends_ubuntu_2204.txt)
         sudo -E systemctl daemon-reload
         sudo -E apt -y autoremove --purge
         sudo -E apt clean
