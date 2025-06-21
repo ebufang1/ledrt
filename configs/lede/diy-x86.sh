@@ -30,6 +30,11 @@ sed -i 's#luci-theme-bootstrap#luci-theme-opentomcat#g' feeds/luci/collections/l
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
 # Add additional packages
+rm -rf feeds/packages/lang/rust
+git clone https://github.com/immortalwrt/packages feeds/packages/lang-rust-temp
+mv feeds/packages/lang-rust-temp/lang/rust feeds/packages/lang/
+rm -rf feeds/packages/lang-rust-temp
+
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
