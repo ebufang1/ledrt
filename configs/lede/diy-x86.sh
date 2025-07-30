@@ -38,7 +38,7 @@ git clone https://github.com/kenzok8/golang -b 1.23 feeds/packages/lang/golang
 sed -i 's|^PKG_VERSION.*|PKG_VERSION:=25.2.21|' feeds/small/xray-core/Makefile
 sed -i 's|^PKG_HASH.*|PKG_HASH:=a565db518d2da12fabb74e123d9bf2bdbc34420b81373938f8fcbc7004fda3ba|' feeds/small/xray-core/Makefile
 git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
-sed -i 's|^KERNEL_PATCHVER:=6.6|KERNEL_PATCHVER:=6.1|' target/linux/x86/Makefile
+#sed -i 's|^KERNEL_PATCHVER:=.*|KERNEL_PATCHVER:=6.1|' target/linux/x86/Makefile
 
 # Delete mosdns
 #rm -rf feeds/packages/net/mosdns
