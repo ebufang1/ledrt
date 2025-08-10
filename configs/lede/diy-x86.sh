@@ -34,7 +34,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang -b 1.23 feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 #sed -i 's|^PKG_VERSION.*|PKG_VERSION:=25.2.21|' feeds/small/xray-core/Makefile
 #sed -i 's|^PKG_HASH.*|PKG_HASH:=a565db518d2da12fabb74e123d9bf2bdbc34420b81373938f8fcbc7004fda3ba|' feeds/small/xray-core/Makefile
 git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
